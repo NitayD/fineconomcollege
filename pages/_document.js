@@ -26,7 +26,7 @@ export default class extends Document {
   }
 
   get helmetJsx () {
-    let title = 'Hello next.js Real World!'
+    let title = 'Финансово Экиномический Колледж'
     return (
       <Helmet>
         <title>{title}</title>
@@ -42,6 +42,8 @@ export default class extends Document {
         <Head>
           { this.helmetJsx }
           { this.helmetHeadComponents }
+          <link rel="stylesheet" href="/static/css/normalize.css"/>
+          <link rel="stylesheet" href="/static/libs/bootstrap/bootstrap-grid.min.css"/>
         </Head>
         <body {...this.helmetBodyAttrComponents}>
           <style>{styles}</style>

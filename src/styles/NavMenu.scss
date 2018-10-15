@@ -1,0 +1,18 @@
+@import './_vars';
+.navmenu {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    color: white;
+    font-size: $size_normal;
+    display: block;
+    cursor: pointer;
+    height: $h_btn;
+    line-height: $h_btn;
+    a {
+      @extend %linkBtn;
+    }
+  }
+}

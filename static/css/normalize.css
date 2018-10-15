@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,700&subset=cyrillic');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  display: block;
+}
+body{
+  line-height: 1;
+  color: black;
+  font-family: 'Fira Sans', 'Helvetica' ,'Arial', sans-serif;
+}
+ol, ul{
+  list-style: none;
+}
+blockquote, q{
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after{
+  content: '';
+  content: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  color: inherit;
+}
+a, a:focus, a:hover{
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+button{
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+}
+button, button:focus, button:hover, input, input:focus, input:hover{
+  outline: none;
+}
+textarea, textarea:focus{
+  outline: none;
+}
+[type="submit"]{
+  font: inherit;
+}
+[type="text"]{
+  font-family: inherit;
+}
+*:focus{
+  outline: none;
+}

@@ -1,0 +1,42 @@
+@import './_vars';
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: $color_darkmain;
+  padding: $h_def 0;
+  z-index: 10;
+  transition: all 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  &.mini {
+    padding: $h_def / 3 0;
+  }
+  &__navmenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.footer {
+  margin-top: auto;
+  background-color: $color_darkmain;
+  padding: $h_def / 3 0 $h_def;
+  z-index: 10;
+  .social_icons {
+    a {
+      padding: 0 $h_def;
+    }
+    img {
+      filter: invert(1);
+      width: 40px;
+    }
+  }
+}
+.body {
+  transition: all 0.3s ease-out;
+  margin-top: 0;
+}

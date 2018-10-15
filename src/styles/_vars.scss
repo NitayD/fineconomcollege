@@ -1,0 +1,47 @@
+$color_main: #7C4DFF;
+$color_darkmain: #512DA8;
+$color_lightmain: #D1C4E9;
+
+$color_text: #212121;
+$color_sectext: #757575;
+$color_drivtext: #BDBDBD;
+
+$size_little: 14px;
+$size_normal: 18px;
+$size_big: 24px;
+$size_title: 30px;
+$size_btn: 20px;
+
+$h_btn: 45px;
+$h_def: 15px;
+
+%linkBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 $h_def * 1.5;
+  transition: all 0.3s ease-out;
+  font-size: $size-normal;
+  position: relative;
+  &:hover {
+    color: $color_lightmain;
+    &:after, &:before {
+      width: 3px;
+    }
+  }
+  &:after, &:before {
+    transition: all 0.3s ease-out;
+    width: 0px;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: $color_lightmain;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}

@@ -4,7 +4,6 @@ import { Map } from 'immutable'
 import { connect } from 'react-redux'
 
 import { getTopRepos } from 'actions/repos'
-import SearchResults from 'components/SearchResults'
 
 class SearchRepoContainer extends Component {
   static async getInitialProps ({ store, query }) {
@@ -20,7 +19,7 @@ class SearchRepoContainer extends Component {
   render () {
     let { repos } = this.props
     return (
-      <SearchResults repos={repos} />
+      <div />
     )
   }
 }
