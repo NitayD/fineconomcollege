@@ -1,0 +1,17 @@
+@import './_vars';
+.btn {
+  height: $h_btn;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  max-width: 100%;
+  font-size: $size_normal;
+  color: white;
+  background-color: $color_darkmain;
+  border: 2px solid $color_darkmain;
+  transition: all 0.3s ease-out;
+  &:hover {
+    background-color: $color_main;
+  }
+}

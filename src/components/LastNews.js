@@ -9,9 +9,7 @@ const testDate = [
     title: 'Наш колледж навестил ветерана ВОВ Королева М.К.',
     desc: `В рамках мероприятий, посвященных Дню Победы 
       студсовет колледжа совместно с акиматом Ауэзовского района посетил
-      ветерана ВОВ Королева М.К.  С Михаилом Кондратьевичем наши студенты
-      дружат около 10 лет. Ежегодно учащиеся колледжа
-      посещают его на дому и оказывает посильную помощь...`
+      ветерана ВОВ Королева М.К.  С...`
   },
   {
     img: 'https://tengrinews.kz/userdata/news/2015/news_273891/thumb_m/photo_156306.jpg',
@@ -19,9 +17,7 @@ const testDate = [
     title: 'Наш колледж навестил ветерана ВОВ Королева М.К.',
     desc: `В рамках мероприятий, посвященных Дню Победы 
       студсовет колледжа совместно с акиматом Ауэзовского района посетил
-      ветерана ВОВ Королева М.К.  С Михаилом Кондратьевичем наши студенты
-      дружат около 10 лет. Ежегодно учащиеся колледжа
-      посещают его на дому и оказывает посильную помощь...`
+      ветерана ВОВ Королева М.К.  С Миха...`
   },
   {
     img: 'https://tengrinews.kz/userdata/news/2015/news_273891/thumb_m/photo_156306.jpg',
@@ -29,15 +25,13 @@ const testDate = [
     title: 'Наш колледж навестил ветерана ВОВ Королева М.К.',
     desc: `В рамках мероприятий, посвященных Дню Победы 
       студсовет колледжа совместно с акиматом Ауэзовского района посетил
-      ветерана ВОВ Королева М.К.  С Михаилом Кондратьевичем наши студенты
-      дружат около 10 лет. Ежегодно учащиеся колледжа
-      посещают его на дому и оказывает посильную помощь...`
+      вете...`
   },
 ]
 
 export default class LastNews extends PureComponent {
   getNews (newsDate, key) {
-    return <News img={newsDate.img} date={newsDate.date} title={newsDate.title} desc={newsDate.desc}/>;
+    return <News img={newsDate.img} date={newsDate.date} title={newsDate.title} desc={newsDate.desc} key={key}/>;
   }
   render () {
     return (
@@ -46,8 +40,17 @@ export default class LastNews extends PureComponent {
           <div className="row justify-content-center">
             <h2 className="lastnews__title">Последние события в жизни колледжа</h2>
           </div>
-          <div className="row">
+          <div className="row lastnewses">
             {testDate.map((news, index)=>this.getNews(news, String(index) + news.title))}
+          </div>
+          <div className="row justify-content-end">
+            <div className="col-auto">
+              <Link href="/news">
+                <a className="btn">
+                  Больше новостей
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
         <style jsx>{styles}</style>
@@ -57,22 +60,39 @@ export default class LastNews extends PureComponent {
 }
 
 const News = function (props) {
-  const { img, date, title, desc } = props;
+  const { img, date, title, desc, key } = props;
   return (
-    <div className="col-12 col-md-6">
+    <div className="col-12 col-md-6 col-lg-4" key={key}>
       <div className="lastnews__news">
         <h4 className="lastnews__news__date">
           { date }
         </h4>
         <figure className="lastnews__news__img">
-          <img src={ img } alt={ title }/>
+          <Link href="/news/1">
+            <a>
+              <img src={ img } alt={ title }/>
+            </a>
+          </Link>
         </figure>
         <h3 className="lastnews__news__title">
-          { title }
+          <Link href="/news/1">
+            <a>
+              { title }
+            </a>
+          </Link>
         </h3>
-        <p className="lastnews__news__desc">
-          { desc }
-        </p>
+        <Link href="/news/1">
+          <a>
+            <p className="lastnews__news__desc">
+              { desc }
+            </p>
+          </a>
+        </Link>
+        <Link href="/news/1">
+          <a className="btn">
+            подробнее
+          </a>
+        </Link>
       </div>
       <style jsx>{styles}</style>
     </div>

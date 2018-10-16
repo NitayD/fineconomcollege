@@ -2,15 +2,19 @@ import React, { PureComponent } from 'react'
 import Link from 'next/link'
 import styles from 'styles/Dropdown.scss'
 
+let linksCounter = 0
+
 class Dropdown extends PureComponent {
   getItemByType (item, key) {
-    switch(item.type) {
+    ++linksCounter;
+    const { text, href, items, type } = item
+    switch(type) {
       case 'link':
-        return <DropdownLinkItem key={key} href={item.href} text={item.text}/>;
+        return <DropdownLinkItem key={String(linksCounter) + 'DropdownLink'} href={href} text={text}/>;
       case 'dropdown':
-        return <DropdownSubDropdownItem key={key} href={item.href} text={item.text} items={item.items}/>;
+        return <DropdownSubDropdownItem key={String(linksCounter) + 'DropdownLink'} text={text} items={items}/>;
       default:
-        return <DropdownItem key={key} text={item.text}/>;
+        return <DropdownItem key={String(linksCounter) + 'DropdownLink'} text={text}/>;
     }
   }
   render () {
@@ -31,10 +35,11 @@ class Dropdown extends PureComponent {
 }
 
 const DropdownLinkItem = function(props) {
+  const { text, href } = props;
   return (
-    <li key={props.key} className="dropdown__item">
-      <Link href={ props.href }>
-        <a>{ props.text }</a>
+    <li className="dropdown__item">
+      <Link href={ href }>
+        <a>{ text }</a>
       </Link>
       <style jsx>{styles}</style>
     </li>
@@ -42,18 +47,20 @@ const DropdownLinkItem = function(props) {
 }
 
 const DropdownItem = function(props) {
+  const { text } = props;
   return (
-    <li key={props.key} className="dropdown__item">
-      { props.text }
+    <li className="dropdown__item">
+      { text }
         <style jsx>{styles}</style>
     </li>
   )
 }
 
 const DropdownSubDropdownItem = function(props) {
+  const { text, items } = props;
   return (
-    <li key={props.key} className="dropdown__item subdropdown">
-      <Dropdown subdropdown={true} items={props.items} defaultText={props.text}/>
+    <li className="dropdown__item subdropdown">
+      <Dropdown subdropdown={true} items={ items } defaultText={ text }/>
       <style jsx>{styles}</style>
     </li>
   )

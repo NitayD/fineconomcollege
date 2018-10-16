@@ -1,16 +1,18 @@
 @import './_vars';
 .lastnews {
   background-color: white;
+  &es {
+    margin-top: $h_def;
+  }
   &__title {
-    font-size: $size_title * 1.75;
+    margin-top: $h_def * 2;
+    @extend %title;
     color: $color_text;
-    text-transform: uppercase;
-    font-weight: 700;
   }
   &__news {
     background-color: $color_drivtext;
     padding: $h_def * 2;
-    margin: $h_def * 2 0;
+    margin: $h_def 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

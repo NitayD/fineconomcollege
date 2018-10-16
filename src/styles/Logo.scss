@@ -11,33 +11,28 @@
     max-width: 100%;
   }
   &__name {
-    font-size: 80px;
-    font-weight: 700;
-    color: white;
-    text-shadow: 0 1px 2px $color_darkmain;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0.8;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     margin: $h-def * 2 0;
+    color: white;
+    @extend %title;
     &:after, &:before {
       content: '';
       position: absolute;
       top: -$h-def * 1.5;
       bottom: -$h-def * 1.5;
-      width: 50vw;
+      width: calc(50vw; + 1px);
       background-color: $color_darkmain;
       z-index: -1;
     }
     &:after {
-      right: 50%;
+      right: calc(50% - 1px);
     }
     &:before {
-      left: 50%;
+      left: calc(50% - 1px);
     }
   }
   &__subname {

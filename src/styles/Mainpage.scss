@@ -1,6 +1,6 @@
 @import './_vars';
 .down {
-  width: 60px;
+  width: 44px;
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -11,13 +11,9 @@
 }
 .first {
   position: relative;
-  height: calc(100vh - 155px);
-  margin-top: 155px;
+  height: 100vh;
+  padding-top: 155px;
   transition: all 0.3s ease-out;
-  &.mini {
-    height: calc(100vh - 95px);
-    margin-top: 95px;
-  }
 }
 .parallax {
   width: 100%;

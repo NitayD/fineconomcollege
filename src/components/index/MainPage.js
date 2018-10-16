@@ -28,34 +28,7 @@ const scrollById = function(id, cb) {
 }
 
 export default class Layout extends PureComponent {
-  constructor() {
-    super();
-    this.state = {
-      miniMenu: false
-    }
-    this.changeMenuStatus = this.changeMenuStatus.bind(this);
-  }
-  changeMenuStatus() {
-    if (window.scrollY !== 0) {
-      if (!this.state.miniMenu) {
-        this.setState({
-          miniMenu: true
-        });
-      }
-    } else {
-      if (this.state.miniMenu) {
-        this.setState({
-          miniMenu: false
-        });
-      }
-    }
-  }
-  componentDidMount() {
-    window.addEventListener('scroll', this.changeMenuStatus);
-    this.changeMenuStatus();
-  }
   render () {
-    const mini = this.props.mini ? 'mini' : '';
     return (
       <div>
         <Parallax
@@ -64,7 +37,7 @@ export default class Layout extends PureComponent {
           blur={5}
           strength={500}
         >
-          <div className={"container first " + mini}>
+          <div className="container first">
             <h1 className="logo__name">
             Финансово&#8209;Экономический Колледж
             </h1>

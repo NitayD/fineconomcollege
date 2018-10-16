@@ -3,7 +3,7 @@ const routes = module.exports = nextRoutes()
 
 const APP_ROUTES = [{
   page: 'index',
-  pattern: '/'
+  pattern: '/:putin'
 }, {
   page: 'about',
   pattern: '/about'
