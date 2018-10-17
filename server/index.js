@@ -7,8 +7,8 @@ const helmet = require('helmet')
 
 const routes = require('../routes')
 
-const port = parseInt(process.env.PORT, 10) || 80
-const dev = process.env.NODE_ENV === 'production'
+const port = parseInt(process.env.PORT, 10) || 800
+const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 
 const handler = routes.getRequestHandler(app)

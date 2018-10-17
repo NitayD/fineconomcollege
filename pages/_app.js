@@ -1,6 +1,8 @@
 import { withRouter } from 'next/router'
 import App, { Container } from 'next/app'
-import Layout from 'components/Layout'
+import Layout from 'components/layout/Layout'
+
+
 
 class MyApp extends App {
   render () {

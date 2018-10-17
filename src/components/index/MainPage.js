@@ -1,8 +1,12 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { Parallax } from 'react-parallax';
 import styles from 'styles/Logo.scss';
 import stylesPage from 'styles/Mainpage.scss';
-import LastNews from 'components/LastNews'
+import LastNews from 'components/LastNews';
+import Footer from 'components/layout/Footer'
+
+import Popup from 'components/popup/Popup'
+
 
 const scrollById = function(id, cb) {
   let V = 0.75;
@@ -27,7 +31,7 @@ const scrollById = function(id, cb) {
   }
 }
 
-export default class Layout extends PureComponent {
+class Layout extends Component {
   render () {
     return (
       <div>
@@ -39,7 +43,7 @@ export default class Layout extends PureComponent {
         >
           <div className="container first">
             <h1 className="logo__name">
-            Финансово&#8209;Экономический Колледж
+              Финансово&#8209;Экономический Колледж
             </h1>
             <figure className="down">
               <a href="#section-2" onClick={()=>scrollById('section-2')}>
@@ -48,13 +52,17 @@ export default class Layout extends PureComponent {
             </figure>
           </div>
         </Parallax>
-        <section id="section-2" style={{height: '100vh'}}>
+
+        <section id="section-2">
           <LastNews />
         </section>
-        <div style={{height: '1000vh'}}></div>
+        <Popup/>
+        <Footer/>
         <style jsx>{styles}</style>
         <style jsx>{stylesPage}</style>
       </div>
     )
   }
 }
+
+export default Layout

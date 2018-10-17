@@ -1,4 +1,4 @@
-@import './_vars';
+@import '../_vars';
 .layout {
   min-height: 100vh;
   display: flex;
@@ -19,21 +19,6 @@
   &__navmenu {
     display: flex;
     justify-content: flex-end;
-  }
-}
-.footer {
-  margin-top: auto;
-  background-color: $color_darkmain;
-  padding: $h_def / 3 0 $h_def;
-  z-index: 10;
-  .social_icons {
-    a {
-      padding: 0 $h_def;
-    }
-    img {
-      filter: invert(1);
-      width: 40px;
-    }
   }
 }
 .body {

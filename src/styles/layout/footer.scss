@@ -1,0 +1,49 @@
+@import '../_vars';
+.footer {
+  margin-top: auto;
+  background-color: $color_darkmain;
+  padding: $h_def * 2 0;
+  color: white;
+  z-index: 10;
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin: $h_def 0;
+    align-items: center;
+    >* {
+      margin: 3px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &--right {
+      align-items: flex-end;
+    }
+  }
+  &__item {
+    margin: 3px 0;
+  }
+  .social_icons {
+    a {
+      padding: 0 $h_def / 2;
+      &:last-child {
+        padding-right: 0;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    img {
+      filter: invert(1);
+      width: 40px;
+    }
+  }
+}

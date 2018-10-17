@@ -10,6 +10,7 @@
     color: $color_text;
   }
   &__news {
+    position: relative;
     background-color: $color_drivtext;
     padding: $h_def * 2;
     margin: $h_def 0;
@@ -44,5 +45,14 @@
       font-size: $size_normal;
       line-height: $size_normal * 1.4;
     }
+    &__more {
+      position: absolute;
+      right: $h_def * 2;
+      bottom: 0;
+      transform: translateY(50%)
+    }
+  }
+  &__more {
+    margin: $h_def * 2 0;
   }
 }

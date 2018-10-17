@@ -44,7 +44,7 @@ export default class LastNews extends PureComponent {
             {testDate.map((news, index)=>this.getNews(news, String(index) + news.title))}
           </div>
           <div className="row justify-content-end">
-            <div className="col-auto">
+            <div className="col-auto lastnews__more">
               <Link href="/news">
                 <a className="btn">
                   Больше новостей
@@ -60,9 +60,9 @@ export default class LastNews extends PureComponent {
 }
 
 const News = function (props) {
-  const { img, date, title, desc, key } = props;
+  const { img, date, title, desc } = props;
   return (
-    <div className="col-12 col-md-6 col-lg-4" key={key}>
+    <div className="col-12 col-md-6 col-lg-4">
       <div className="lastnews__news">
         <h4 className="lastnews__news__date">
           { date }
@@ -88,11 +88,13 @@ const News = function (props) {
             </p>
           </a>
         </Link>
-        <Link href="/news/1">
-          <a className="btn">
-            подробнее
-          </a>
-        </Link>
+        <span className="lastnews__news__more">
+          <Link href="/news/1">
+            <a className="btn">
+              подробнее
+            </a>
+          </Link>
+        </span>
       </div>
       <style jsx>{styles}</style>
     </div>

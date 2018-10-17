@@ -1,8 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import Helmet from 'react-helmet'
-import styles from 'styles/global.scss'
 
-        console.log(styles)
 // from https://github.com/zeit/next.js/edit/canary/examples/with-react-helmet/pages/_document.js
 export default class extends Document {
   static async getInitialProps (...args) {
@@ -45,8 +43,8 @@ export default class extends Document {
           { this.helmetHeadComponents }
           <link rel="stylesheet" href="/static/css/normalize.css"/>
           <link rel="stylesheet" href="/static/libs/bootstrap/bootstrap-grid.min.css"/>
+          <link rel="stylesheet" href="/static/css/global.css"/>
         </Head>
-        <style jsx global>{styles}</style>
         <body {...this.helmetBodyAttrComponents}>
           
           <Main />

@@ -28,7 +28,7 @@ module.exports = {
       'babel-loader',
       'styled-jsx-css-loader', {
         loader: 'sass-loader',
-        options: { sourceMap: dev }
+        options: { sourceMap: false }
       }]
     })
 

@@ -12,6 +12,31 @@
   border: 2px solid $color_darkmain;
   transition: all 0.3s ease-out;
   &:hover {
+    border-color: $color_main;
     background-color: $color_main;
+  }
+}
+.link {
+  cursor: pointer;
+  font-size: $size_normal;
+  transition: all 0.3s ease-out;
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  &:after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+  }
+  &--big {
+    font-size: $size_btn;
+  }
+  &--popup {
+    border-bottom: 1px dashed white;
+    &:after {content: none;}
   }
 }

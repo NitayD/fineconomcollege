@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import repos from './repos'
+import popup from './popup'
 
 export default combineReducers({
-  repos
+  popup
 })
