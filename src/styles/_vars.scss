@@ -16,6 +16,7 @@ $h_btn: 45px;
 $h_def: 15px;
 
 %linkBtn {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +24,9 @@ $h_def: 15px;
   transition: all 0.3s ease-out;
   font-size: $size-normal;
   position: relative;
+  @media screen and (max-width: 1199px) {
+    padding: 0 $h_def * 0.8;
+  }
   &:hover {
     color: $color_lightmain;
     &:after, &:before {

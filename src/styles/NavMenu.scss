@@ -3,6 +3,10 @@
   &__list {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__item {
     color: white;

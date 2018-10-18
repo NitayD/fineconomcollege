@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
 import styles from 'styles/layout/Layout.scss'
-import Logo from '../Logo'
-import NavMenu from '../NavMenu'
+
+import Header from './Header'
 
 export default class Layout extends PureComponent {
   constructor() {
@@ -10,7 +9,6 @@ export default class Layout extends PureComponent {
     this.state = {
       miniMenu: false
     }
-    this.header = React.createRef();
     this.changeMenuStatus = this.changeMenuStatus.bind(this);
   }
   changeMenuStatus() {
@@ -32,24 +30,14 @@ export default class Layout extends PureComponent {
     window.addEventListener('scroll', this.changeMenuStatus);
     this.changeMenuStatus();
   }
+  componentDidUnMount() {
+    window.removeEventListener('scroll', this.changeMenuStatus);
+  }
   render () {
     const mini = this.state.miniMenu ? 'mini' : '';
     return (
       <div className='layout'>
-
-        <header ref={this.header} className={"header " + mini }>
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-auto">
-                <Logo mini={this.state.miniMenu}/>
-              </div>
-              <div className="col header__navmenu">
-                <NavMenu mini={this.state.miniMenu}/>
-              </div>
-            </div>
-          </div>
-        </header>
-
+        <Header mini={mini}/>
         <main className="body">
         { this.props.children }
         </main>

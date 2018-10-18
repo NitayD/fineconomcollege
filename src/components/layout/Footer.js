@@ -10,7 +10,7 @@ export default class Footer extends PureComponent {
       <footer className="footer">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <ul className="footer__list">
                 <li className="footer__item">
                   <Link href="/abiturientam/studencheskaya_zhizn">
@@ -54,7 +54,7 @@ export default class Footer extends PureComponent {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <div className="social_icons d-flex justify-content-center">
                 <a href="http://google.com" target="_blank">
                   <img src="/static/img/icons/social/fb.svg" alt="Social Fb"/>
@@ -85,7 +85,7 @@ export default class Footer extends PureComponent {
                 </span>
               </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-md-4">
               <ul className="footer__list footer__list--right">
                 <li className="footer__item">
                   <Link href="/abiturientam/istoriya">

@@ -6,6 +6,12 @@
   transition: all 0.3s ease-out;
   &.mini {
     width: 80px;
+    @media screen and (max-width: 991px) {
+      width: 70px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    width: 76px;
   }
   img {
     max-width: 100%;

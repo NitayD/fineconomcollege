@@ -36,8 +36,12 @@
       size: 12px auto;
     }
     padding-right: $h_def * 1.5 + $h_def;
+    @media screen and (max-width: 1199px) {
+      padding-right: $h_def * 2;
+    }
   }
   &__list {
+    z-index: 2;
     opacity: 0;
     visibility: hidden;
     top: 100%;

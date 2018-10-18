@@ -1,0 +1,42 @@
+@import '../_vars';
+.specialtyes {
+  margin: -15vh 0 $h_def * 2;
+  &__title {
+    top: auto;
+    bottom: 15vh;
+    margin-bottom: 0;
+  }
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color_darkmain;
+  margin: $h_def / 2;
+  padding: $h_def;
+  color: white;
+  text-transform: uppercase;
+  font-size: $size_big;
+  transition: all 0.3s ease-out;
+  &:hover {
+    color: $color_drivtext;
+  }
+  &__icon {
+    width: 150px;
+    img {
+      width: 100%;
+      filter: invert(1);
+    }
+  }
+  &__code {
+    color: white !important;
+    font-size: $size_big;
+    text-align: center;
+    margin-top: $h_def / 2;
+  }
+  &__text {
+    font-size: $size_title;
+    font-weight: 600;
+    margin-bottom: $h_def;
+  }
+}
