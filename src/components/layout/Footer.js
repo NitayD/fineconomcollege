@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import Link from 'next/link'
 import PopupLink from 'components/popup/PopupLink'
 import styles from 'styles/layout/footer.scss'
+import Popup from 'components/popup/Popup'
 
 export default class Footer extends PureComponent {
   render () {
@@ -115,6 +116,7 @@ export default class Footer extends PureComponent {
             </div>
           </div>
         </div>
+        <Popup/>
         <style jsx>{styles}</style>
       </footer>
     )

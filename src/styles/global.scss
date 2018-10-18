@@ -40,3 +40,34 @@
     &:after {content: none;}
   }
 }
+.title {
+  &--page {
+    font-size: $size_title * 2;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: calc(50% + (155px / 2));
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: $h-def * 2 0;
+    color: white;
+    @extend %title;
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      top: -$h-def * 1.5;
+      bottom: -$h-def * 1.5;
+      width: calc(50vw; + 1px);
+      background-color: $color_darkmain;
+      z-index: -1;
+    }
+    &:after {
+      right: calc(50% - 1px);
+    }
+    &:before {
+      left: calc(50% - 1px);
+    }
+  }
+
+}

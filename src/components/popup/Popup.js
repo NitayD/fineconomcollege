@@ -20,7 +20,6 @@ class Popup extends Component {
 
   render () {
     const popupInnerComponent = this.props.popup.toJS().popupInnerComponent
-    console.log(popupInnerComponent);
     if (popupInnerComponent) {
       return (
         <div className="popup">

@@ -5,7 +5,6 @@ import stylesPage from 'styles/Mainpage.scss';
 import LastNews from 'components/LastNews';
 import Footer from 'components/layout/Footer'
 
-import Popup from 'components/popup/Popup'
 
 
 const scrollById = function(id, cb) {
@@ -56,7 +55,6 @@ class Layout extends Component {
         <section id="section-2">
           <LastNews />
         </section>
-        <Popup/>
         <Footer/>
         <style jsx>{styles}</style>
         <style jsx>{stylesPage}</style>

@@ -5,7 +5,7 @@ import Dropdown from './Dropdown'
 
 const menu = {
   toStudents: [{
-    href: '/students',
+    href: '/studentam/raspisanie',
     text: 'Расписание',
     type: 'link'
   }],
@@ -42,24 +42,24 @@ const menu = {
       text: 'Внеурочная деятельность',
       type: 'link'
     }],
-  about: [{
-      href: '/about/istoriya',
+  o_nas: [{
+      href: '/o_nas/istoriya',
       text: 'История колледжа',
       type: 'link'
     },{
-      href: '/about/klubi',
+      href: '/o_nas/klubi',
       text: 'Клубы',
       type: 'link'
     },{
-      href: '/about/prepodavateli',
+      href: '/o_nas/prepodavateli',
       text: 'Преподаватели',
       type: 'link'
     },{
-      href: '/about/administraciya',
+      href: '/o_nas/administraciya',
       text: 'Администрация',
       type: 'link'
     },{
-      href: '/about/pomesheniya',
+      href: '/o_nas/pomesheniya',
       text: 'Помещения',
       type: 'link'
     }]
@@ -83,7 +83,7 @@ export default class NavMenu extends PureComponent {
             <Dropdown items={menu.toAbituriens} defaultText="Поступление"/>
           </li>
           <li className="navmenu__item">
-            <Dropdown items={menu.about} defaultText="О колледже"/>
+            <Dropdown items={menu.o_nas} defaultText="О колледже"/>
           </li>
           <li className="navmenu__item">
             <Link href="/auth/">
