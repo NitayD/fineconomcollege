@@ -25,9 +25,7 @@ app.prepare().then(() => {
     immutable: true
   }))
 
-  server.get('*', (req, res) => {
-    return handler(req, res)
-  })
+  server.use(handler)
 
   startServer()
 
@@ -35,5 +33,7 @@ app.prepare().then(() => {
     server.listen(port, () => {
       console.log(`> Ready on http://localhost:${port}`)
     })
+
+
   }
 })

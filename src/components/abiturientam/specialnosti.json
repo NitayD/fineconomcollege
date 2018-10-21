@@ -1,0 +1,131 @@
+[
+  {
+    "code" : "0513000",
+    "title": "Маркетинг",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0514000",
+    "title": "Оценка",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0515000",
+    "title": "Менеджмент",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0516000",
+    "title": "Финнасы",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0518000",
+    "title": "Учёт и аудит",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0519000",
+    "title": "Экономика",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "0511000",
+    "title": "Туризм",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  },{
+    "code" : "1305000",
+    "title": "Информациооные системы",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "termsAndPayment": [
+      {
+        "startFrom": "На базе 9-го класса",
+        "term": "2 года 10 меяцев",
+        "payment": 200000
+      },
+      {
+        "startFrom": "На базе 11-го класса",
+        "term": "1 года 10 меяцев",
+        "payment": 200000
+      }
+    ]
+  }
+]

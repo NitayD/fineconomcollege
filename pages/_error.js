@@ -14,6 +14,10 @@ export default class Error extends React.Component {
           ? `An error ${this.props.statusCode} occurred on server`
           : 'An error occurred on client'}
         <Link route="/putin"><a>Main</a></Link>
+        <hr />
+        <Link route='specialnost' params={{specialnost: '050031'}}>
+          <a>Hello world</a>
+        </Link>
       </p>
     )
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
 import Footer from 'components/layout/Footer'
-import Link from 'next/link'
+import {Link} from '../../../routes'
 import stylesPage from 'styles/abiturientam/Specialnosti.scss'
 
 import Specialnost from './Specialnost'
@@ -46,9 +46,9 @@ class Specialnosti extends Component {
   getSpecialty (item, index) {
     return (
       <div className="col-md-6">
-        <Link href="/"><a>
-          <Specialnost data={item}/>
-        </a></Link>
+        <Link route={`/abiturientam/specialnosti/${item.code}`}>
+          <a><Specialnost data={item}/></a>
+        </Link>
       </div>
     )
   }
@@ -59,7 +59,6 @@ class Specialnosti extends Component {
         <Parallax
           bgImage='/static/img/abiturientam/specialnosti.jpg'
           bgImageAlt="Specialnosti Background"
-          blur={3}
           strength={500}
         >
           <div className="container d-flex justify-content-center align-items-end" style={{minHeight: 'calc(50vh + 155px)'}}>
