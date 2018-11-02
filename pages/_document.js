@@ -1,6 +1,12 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import Helmet from 'react-helmet'
 
+const baseSeo = {
+  title: 'Финансово Экиномический Колледж',
+  desc: 'Описание сайта колледжа ещё не готово',
+  img: 'http://www.eurazir.kz/Logo_EInAEM.png'
+}
+
 // from https://github.com/zeit/next.js/edit/canary/examples/with-react-helmet/pages/_document.js
 export default class extends Document {
   static async getInitialProps (...args) {
@@ -25,12 +31,24 @@ export default class extends Document {
   }
 
   get helmetJsx () {
-    let title = 'Финансово Экиномический Колледж'
+    const { title, desc, img } = baseSeo
     return (
       <Helmet>
-        <title>{title}</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta property='og:title' content={title} />
+
+        <title>{title}</title>
+        <meta property="title" content={title}/>
+        <meta property="og:title" content={title}/>
+
+        <meta property="og:type" content="website"/>
+        <meta property="type" content="website"/>
+
+        <meta property="description" content={desc}/>
+        <meta name="description" content={desc}/>
+        <meta property="og:description" content={desc}/>
+        
+        <meta property="og:image" content={img}/>
+        <meta property="image" content={img}/>
       </Helmet>
     )
   }

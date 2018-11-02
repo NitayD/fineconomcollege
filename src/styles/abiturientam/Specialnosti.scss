@@ -40,3 +40,136 @@
     margin-bottom: $h_def;
   }
 }
+
+.specialnost {
+  margin-top: 300px;
+  color: white;
+  &__block {
+    background: $color_darkmain;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+  }
+  &__title {
+    font: {
+      size: $size_title;
+      weight: 700;
+    }
+    letter-spacing: 1.2px;
+    @media screen and (max-width: 575px) {
+      font-size: $size_title - 6;
+      text-align: center;
+    }
+    &s {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+      }
+
+      * {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        @media screen and (min-width: 576px) {
+          &:first-child { padding-left: 0; }
+          &:last-child { padding-right: 0; }
+        }
+      }
+    }
+  }
+  &__code {
+    font: {
+      size: $size_title;
+      weight: 600;
+    }
+  }
+  &__shortDesc {
+    line-height: $size_big;
+  }
+  &__desc {
+    margin-top: 15px;
+    line-height: $size_big - 2;
+  }
+  &__table {
+    width: 100%;
+    font-size: $size_normal;
+    thead {
+      td:last-child {
+        &:after { content: none; }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 991px) {
+      display: block;
+      thead, tbody, td {
+        display: block;
+        text-align: right;
+      }
+      thead {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr {
+        display: flex;
+        flex-direction: column;
+        &:first-child {border-bottom-width: 0;}
+      }
+      td {
+        padding: 5px 15px;
+        position: relative;
+        width: 75%;
+        margin-left: 25%;
+        z-index: 2;
+        &:before {
+          position: absolute;
+          right: 33.3333334%;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          padding-left: 15px;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          z-index: -1;
+        }
+        &:first-child {
+          &:before {
+            content: 'Начало';
+          }
+        }
+        &:nth-child(2) {
+          background-color: $color_main;
+          &:before {
+            content: 'Срок';
+            background-color: $color_main;
+          }
+        }
+        &:last-child {
+          &:before {
+            content: 'Оплата';
+          }
+        }
+      }
+    }
+  }
+  &__row {
+    border: 2px solid white;
+  }
+  &__col {
+    padding: 5px;
+    &:nth-child(2) {
+      text-align: center;
+    }
+    &:last-child {
+      text-align: right;
+      &:after { content: 'тг.' }
+    }
+    &:empty { opacity: 0; }
+  }
+}

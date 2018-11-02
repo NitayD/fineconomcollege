@@ -2,128 +2,136 @@
   {
     "code" : "0513000",
     "title": "Маркетинг",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi, consequatur velit quidem quo vel. Vitae repellat vel quam a quod doloremque, culpa accusamus! Ut mollitia facilis recusandae in, alias, nulla eligendi sequi suscipit minus facere, omnis ipsa asperiores officiis! Dolorum architecto laboriosam dolores doloremque itaque nam, similique aspernatur animi, repellendus modi minima quam facilis veniam odio autem ut molestiae, facere ad, officiis nesciunt. Ullam, odit dolorum, porro veniam, accusamus pariatur commodi, eligendi numquam voluptas nemo sequi animi modi tempore consequatur. Reiciendis nihil in, sunt adipisci saepe. Accusamus possimus, commodi tempore aliquam eaque, voluptatibus hic iusto cupiditate, quos ab eos!",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0514000",
     "title": "Оценка",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque unde, at hic ex neque praesentium dolorem architecto delectus repellendus enim debitis sapiente ad quas facere, voluptates illo non nesciunt dolorum id officiis aut cupiditate repudiandae odio aliquam? Impedit illo perferendis quaerat quia! Velit cupiditate voluptates, praesentium explicabo illo dolorum fuga voluptatem modi inventore dolorem at libero placeat expedita unde eaque et eius ipsam eveniet, quis cumque repellat doloremque magnam nostrum recusandae. Quasi ut perspiciatis laboriosam praesentium at odit maxime accusamus ipsam? Repellendus vitae reiciendis adipisci veritatis, voluptatibus quos recusandae eum nesciunt minus amet nemo excepturi cumque beatae, mollitia officiis?",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0515000",
     "title": "Менеджмент",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis deleniti, tempore quod incidunt recusandae corporis dicta! Minus est velit odit, numquam magni blanditiis doloribus mollitia, fugiat inventore maiores fuga corporis libero labore tempora dolores quos voluptatem culpa quam totam accusantium eaque voluptate. Laboriosam magnam accusantium qui omnis totam minus similique quam harum sint illum in, expedita veniam sunt labore est rerum consequatur. Sint eum officia, non praesentium vero culpa, laudantium aliquam atque magni consequuntur similique id rem numquam et reiciendis omnis ipsa totam eaque, minus quasi veritatis. Autem atque iste illum similique, in sapiente ipsa dolorum, quae modi assumenda, quidem.",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0516000",
     "title": "Финнасы",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi obcaecati molestiae, natus facere rem aut soluta pariatur magni dolorem dolorum exercitationem mollitia perspiciatis maiores commodi consequuntur! Fugiat ipsam, porro aliquid. Sunt a est, facilis nemo esse numquam dolor minima, sapiente dolorem aspernatur doloremque vel maiores voluptate possimus. Repellendus, ducimus earum iste incidunt odit provident maiores dolore sit tempora asperiores in dolorum corrupti? Totam expedita quis saepe! Fuga voluptas, similique voluptatibus dolorem accusantium ratione nihil ducimus voluptate tempora optio, dolor reiciendis molestias aperiam unde maiores consequuntur ipsa error impedit praesentium magni ad quae. Eveniet consectetur molestiae quibusdam magni, debitis ex voluptate.",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0518000",
     "title": "Учёт и аудит",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia velit nisi id unde adipisci. Aspernatur velit ipsa quo, ex placeat eligendi. Obcaecati placeat sapiente molestiae nobis, veritatis repellat incidunt debitis quia earum ipsam illo rem unde velit fugiat dolore, animi architecto deleniti ut doloremque perferendis dolorum esse! Consectetur alias numquam nesciunt nisi perferendis esse, totam amet dolor ipsam accusantium tenetur provident nulla, magni adipisci aspernatur. Expedita facere voluptatum earum quis aliquam, reprehenderit commodi, minima perferendis quia libero repudiandae molestiae, accusamus voluptatibus quisquam ut temporibus. Blanditiis earum aut voluptatum facilis illo, atque alias, odit dolores eligendi quas quam voluptate eius est.",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0519000",
     "title": "Экономика",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus commodi voluptatem quo fugiat iste nam tempora eius magnam cum cumque sequi reiciendis nihil nostrum ipsum molestias repellendus suscipit aut, animi culpa reprehenderit doloremque, id voluptates architecto nemo. Nihil necessitatibus pariatur dicta, optio velit soluta quam in quae voluptatum et voluptatem delectus enim fugiat neque officia voluptate tempore sed ad voluptatibus. Est assumenda sint, cum quaerat dolore, explicabo in! Tempore quis unde quam, aspernatur ducimus deleniti quae doloremque inventore accusantium fuga veritatis at reiciendis consectetur perferendis sit odit dolore dolorum nostrum soluta labore illum, excepturi possimus dolores. Cum consequatur dicta temporibus.",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "0511000",
     "title": "Туризм",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis possimus vero unde architecto atque voluptatem accusantium, error placeat rerum, illo praesentium repudiandae numquam aspernatur odio dolorum consectetur, quos illum ullam dolorem voluptatum molestiae, vitae voluptate! Cumque consequuntur labore asperiores veniam rerum magni, eum delectus dolor saepe excepturi repellendus, dolore consequatur esse enim omnis distinctio laborum, odit est officiis deleniti vitae explicabo earum laudantium. Inventore illo dolore, voluptas suscipit beatae eius officia quos commodi a ab sed officiis, eligendi possimus error! In nisi beatae mollitia consectetur possimus non autem perferendis. Reprehenderit laudantium maxime qui, dolorem laborum eveniet eum itaque veniam fuga!",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
   },{
     "code" : "1305000",
-    "title": "Информациооные системы",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "title": "Информационные системы",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nam.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eligendi voluptas omnis non pariatur incidunt animi quasi repellat neque, voluptatibus consectetur deserunt ratione amet eveniet dolores perspiciatis molestias quia vero harum facilis natus ad. Mollitia sunt quis odit quisquam! Unde illum, ex hic nesciunt et laudantium animi iure! Minima perspiciatis quisquam laborum soluta! Ratione molestias non consectetur eveniet totam placeat officia tempore, vel, perspiciatis saepe laborum nihil ducimus harum voluptate libero. Ut dolor debitis architecto ullam vel distinctio a maxime, facere delectus facilis suscipit expedita velit similique accusamus dicta excepturi, numquam quis fugit, doloribus quas quae! Adipisci, ipsam nostrum incidunt.",
     "termsAndPayment": [
       {
         "startFrom": "На базе 9-го класса",
-        "term": "2 года 10 меяцев",
+        "term": "2 года 10 меcяцев",
         "payment": 200000
       },
       {
         "startFrom": "На базе 11-го класса",
-        "term": "1 года 10 меяцев",
+        "term": "1 года 10 меcяцев",
         "payment": 200000
       }
     ]
