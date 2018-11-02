@@ -1,0 +1,49 @@
+@import '../_vars';
+.block {
+  padding: 15px;
+  color: white;
+  &__title {
+    font: {
+      size: $size-title;
+      weight: 600;
+    }
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  &--text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+    h3 {
+      font: {
+        size: $size_big;
+        weight: 500;
+      }
+    }
+    p {
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .secondary {
+        color: $color_drivtext;
+      }
+    }
+  }
+}
+
+.wrap {
+  background-color: $color_darkmain;
+  position: relative;
+  top: -80px;
+}
+
+.list {
+  &__item {
+    list-style-type: disc;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
