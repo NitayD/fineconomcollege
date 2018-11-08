@@ -60,6 +60,9 @@
     > .dropdown__list {
       opacity: 1;
       visibility: visible;
+      > .dropdown__item:before {
+        width: 3px;
+      }
     }
   }
   &__item {

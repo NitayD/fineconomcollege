@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Parallax } from 'react-parallax';
+import { Parallax } from 'react-parallax'
+
+import PopupLink from 'components/popup/PopupLink'
 
 import Footer from 'components/layout/Footer'
 
@@ -38,6 +40,9 @@ class Documenti extends Component {
                   </li>
                   <li className="list__item">
                     Копия | ИИН одного из родителей
+                  </li>
+                  <li>
+                    <PopupLink popupInner={<span>Жопа</span>}>Привет</PopupLink>
                   </li>
                   <li className="list__item">
                     Оригинал и копия | Удостоверение личности или свидетельство о рождении

@@ -53,6 +53,9 @@
     margin: $h-def * 2 0;
     color: white;
     @extend %title;
+    @media screen and (max-width: 575px) {
+      font-size: $size_title * 1.2;
+    }
     &:after, &:before {
       content: '';
       position: absolute;
