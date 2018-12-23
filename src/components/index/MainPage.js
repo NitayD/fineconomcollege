@@ -4,8 +4,9 @@ import styles from 'styles/Logo.scss';
 import stylesPage from 'styles/Mainpage.scss';
 import LastNews from 'components/LastNews';
 import Footer from 'components/layout/Footer'
+import axios from 'axios';
 
-
+import { initNews } from '/actions/main_news';
 
 const scrollById = function(id, cb) {
   let V = 0.75;
@@ -31,6 +32,13 @@ const scrollById = function(id, cb) {
 }
 
 class Layout extends Component {
+  static async getInitialProps ({ store, query }) {
+    await axios.get(`${process.env.API_ADDRESS}/blog`)
+    .then(({ data }) => {
+      store.dispatch(initNews(data))
+    })
+  }
+
   render () {
     return (
       <div>
@@ -58,6 +66,21 @@ class Layout extends Component {
         <Footer/>
         <style jsx>{styles}</style>
         <style jsx>{stylesPage}</style>
+        <style jsx global>{`
+          .react-parallax:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 1;
+          }
+          .react-parallax-content {
+            z-index: 2;
+          }
+        `}</style>
       </div>
     )
   }

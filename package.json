@@ -12,6 +12,7 @@
     "next-routes": "^1.4.2",
     "node-sass": "^4.9.3",
     "normalize-scss": "^7.0.1",
+    "object-fit-images": "^3.2.4",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-breakpoints": "^3.0.2",
