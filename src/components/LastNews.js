@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 class LastNews extends PureComponent {
   getNews (newsDate, key) {
-    if (newsDate.state === 'published') return <News data={newsDate} brief={newsDate.content.brief} key={key}/>
+    if (newsDate.state === 'Опубликован') return <News data={newsDate} brief={newsDate.content.brief} key={key}/>
     else return ''
   }
   render () {    
