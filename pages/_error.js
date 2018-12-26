@@ -9,16 +9,18 @@ export default class Error extends React.Component {
 
   render() {
     return (
-      <p style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+      <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
         {this.props.statusCode
           ? `An error ${this.props.statusCode} occurred on server`
           : 'An error occurred on client'}
-        <Link route="/putin"><a>Main</a></Link>
         <hr />
-        <Link route='specialnost' params={{specialnost: '050031'}}>
-          <a>Hello world</a>
-        </Link>
-      </p>
+        <a onClick={() => {return window ? window.history.back() : false}}>Назад</a> <Link route="/putin"><a>Главная</a></Link>
+        <style jsx>{`
+          a {
+            text-decoration: underline;
+          }
+        `}</style>
+      </div>
     )
   }
 }

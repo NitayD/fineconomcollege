@@ -34,10 +34,10 @@ export default class Layout extends PureComponent {
     window.removeEventListener('scroll', this.changeMenuStatus);
   }
   render () {
-    const mini = this.state.miniMenu ? 'mini' : '';
+    const { miniMenu } = this.state
     return (
-      <div className='layout'>
-        <Header mini={mini}/>
+      <div className={`layout ${miniMenu ? 'mini' : ''}`}>
+        <Header mini={miniMenu}/>
         <main className="body">
         { this.props.children }
         </main>

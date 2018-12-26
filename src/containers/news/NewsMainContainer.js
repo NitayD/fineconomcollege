@@ -6,31 +6,7 @@ import LastNews from 'components/LastNews';
 import Footer from 'components/layout/Footer'
 import axios from 'axios';
 
-import { initNews } from '/actions/main_news';
-
-const scrollById = function(id, cb) {
-  let V = 0.75;
-  let w = window.pageYOffset;
-  let hash = '#' + id;
-  let t = document.querySelector(hash).getBoundingClientRect().top - 95;
-  let start = null;
-  requestAnimationFrame(step);
-  function step(time) {
-    if (start === null) start = time;
-    let progress = time - start,
-      r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-    window.scrollTo(0,r);
-    if (r != w + t) {
-      requestAnimationFrame(step)
-    } else {
-      if (cb) {
-        cb();
-      }
-    }
-  }
-}
-
-class Layout extends Component {
+class NewsMainContainer extends Component {
   static async getInitialProps ({ store, query }) {
     await axios.get(`${process.env.API_ADDRESS}/blog`)
     .then(({ data }) => {
@@ -56,9 +32,9 @@ class Layout extends Component {
               Финансово&#8209;Экономический Колледж
             </h1>
             <figure className="down">
-              <button className="link" onClick={()=>scrollById('section-2')}>
+              <a href="#section-2" onClick={()=>scrollById('section-2')}>
                 <img src="/static/img/icons/down.svg" alt="Down"/>
-              </button>
+              </a>
             </figure>
           </div>
         </Parallax>
@@ -83,16 +59,10 @@ class Layout extends Component {
           .react-parallax-content {
             z-index: 2;
           }
-          .down .link {
-            cursor: pointer;
-          }
-          .down .link:after {
-            content: none;
-          }
         `}</style>
       </div>
     )
   }
 }
 
-export default Layout
+export default NewsMainContainer

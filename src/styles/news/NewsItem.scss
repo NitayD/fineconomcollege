@@ -1,0 +1,22 @@
+@import '../vars';
+
+section {
+    margin-top: $h_def * 2;
+    margin-bottom: $h_def * 3;
+}
+
+h1 {
+    @extend %title;
+    text-align: left;
+    margin-top: $h_def;
+    margin-bottom: $h_def;
+}
+
+h3, .category {
+    font-size: $size_big;
+    line-height: $size_big + 4;
+}
+
+.category {
+    
+}

@@ -1,14 +1,16 @@
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
+import { Link } from '/../routes'
 import styles from 'styles/LastNews.scss'
 import { connect } from 'react-redux'
+import NewsDate from 'components/Universal/ParsedDate'
+import ParsedHTML from 'components/Universal/ParsedHTML'
 
 class LastNews extends PureComponent {
   getNews (newsDate, key) {
-    if (newsDate.state === 'Опубликован') return <News data={newsDate} brief={newsDate.content.brief} key={key}/>
+    if (newsDate.Состояниние === 'Опубликован') return <News data={newsDate} brief={newsDate.Содержимое.Короткое} key={key}/>
     else return ''
   }
-  render () {    
+  render () {
     return (
       <section className="lastnews">
         <div className="container">
@@ -20,7 +22,7 @@ class LastNews extends PureComponent {
           </div>
           <div className="row justify-content-end">
             <div className="col-auto lastnews__more">
-              <Link href="/news">
+              <Link href="/novosti">
                 <a className="btn">
                   Больше новостей
                 </a>
@@ -35,24 +37,24 @@ class LastNews extends PureComponent {
 }
 
 const News = function (props) {
-  const { data, brief } = props
-  const { title, publishedDate, image, slug } = data
-  let time = publishedDate ? new Date(Date.parse(publishedDate)) : new Date(Date.now())
+  const { Заголовок, Дата_публикации, Изображение, slug, Содержимое } = props.data
   return (
     <div className="col-12 col-md-6 col-lg-4">
-      <Link href={`/news/${slug}`}>
+      <Link route='news_item' params={{slug: slug}}>
         <a>
           <div className="lastnews__news">
             <h4 className="lastnews__news__date">
-              { `${time.getDate()} ${getMounthString(time.getMonth())} ${time.getFullYear()}` }
+              <NewsDate date={Дата_публикации} />
             </h4>
             <figure className="lastnews__news__img">
-              <img src={ image ? image.secure_url : '' } alt={ title }/>
+              <img src={ Изображение ? Изображение.secure_url : '' } alt={ Заголовок }/>
             </figure>
             <h3 className="lastnews__news__title">
-              { title }
+              { Заголовок }
             </h3>
-            <div className="lastnews__news__desc" dangerouslySetInnerHTML={{ __html: brief || '' }}/>
+            <div className="lastnews__news__desc">
+              <ParsedHTML text={Содержимое.Короткое}/>
+            </div>
             <span className="lastnews__news__more">
               <span className="btn">
                 подробнее
@@ -64,24 +66,6 @@ const News = function (props) {
       <style jsx>{styles}</style>
     </div>
   )
-}
-
-function getMounthString(mounthNumber) {
-  switch (mounthNumber) {
-    case 0: return 'Янв'
-    case 1: return 'Фев'
-    case 2: return 'Мар'
-    case 3: return 'Апр'
-    case 4: return 'Май'
-    case 5: return 'Июн'
-    case 6: return 'Июл'
-    case 7: return 'Авг'
-    case 8: return 'Сен'
-    case 9: return 'Окт'
-    case 10: return 'Ноя'
-    case 11: return 'Дек'
-    default: return ''
-  }
 }
 
 function mapStateToProps({ main_news }) {

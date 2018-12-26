@@ -5,8 +5,9 @@ import NavMenu from '../NavMenu'
 
 export default class Header extends PureComponent {
   render () {
+    const { mini } = this.props
     return (
-      <header ref={this.header} className={"header " + this.props.mini }>
+      <header ref={this.header} className={`header ${mini ? 'mini' : ''}`}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-auto">

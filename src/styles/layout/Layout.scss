@@ -3,6 +3,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: calc(126px + #{$h_def * 2});
+  transition: padding-top 0.5s ease-out;
+  &.mini {
+    padding-top: calc(126px + #{$h_def / 3 * 2});
+  }
 }
 .header {
   background-color: $color_darkmain;
