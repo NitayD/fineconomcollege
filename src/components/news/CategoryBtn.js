@@ -12,7 +12,6 @@ class CategoryBtn extends Component {
     else
       axios.get(`${process.env.API_ADDRESS}/blog_category/${id}`)
       .then((ress) => {
-        console.log(ress)
         this.props.initCategory(ress.data)
       })
       .catch((err) => {

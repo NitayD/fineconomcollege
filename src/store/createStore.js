@@ -11,8 +11,8 @@ function createMiddlewares ({ isServer }) {
   let middlewares = [
     thunkMiddleware
   ]
-//config.env !== 'development'
-  if (typeof window !== 'undefined') {
+//
+  if (config.env !== 'development' || typeof window !== 'undefined') {
     middlewares.push(createLogger({
       level: 'info',
       collapsed: true,
