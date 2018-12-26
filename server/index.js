@@ -7,7 +7,7 @@ const helmet = require('helmet')
 
 const routes = require('../routes')
 
-const port = parseInt(process.env.PORT, 10) || 800
+const port = parseInt(process.env.PORT, 10) || 3080
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 
