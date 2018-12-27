@@ -42,10 +42,12 @@ class CallMe extends Component {
           <PopupLink popupInner={
             <div className="form form__unical01 d-flex flex-column align-items-center">
               <h5>Оставьте ваш номер телефона, и мы вам перезвоним</h5>
-              <InputMask mask="+7 (999) 999-99-99" maskChar={null} onChange={this.onChange.bind(this)} />
-              <button className={`${this.state.value.length === 18 ? 'current' : ''}`} onClick={this.sendOrder.bind(this)}>
-                Перезвонить
-              </button>
+              <div className="d-flex align-items-center" style={{ margin: '15px 0 0' }}>
+                <InputMask mask="+7 (999) 999-99-99" maskChar={null} onChange={this.onChange.bind(this)} autoFocus/>
+                <button className={`${this.state.value.length === 18 ? 'current' : ''}`} onClick={this.sendOrder.bind(this)}>
+                  Перезвонить
+                </button>
+              </div>
             </div>
           }>
             Перезвоните мне
@@ -57,7 +59,7 @@ class CallMe extends Component {
           .form__unical01 button {
             display: inline-block;
             font-size: 20px;
-            line-height: 20px;
+            line-height: 24px;
             padding: 7.5px 12.5px;
             position: relative;
             color: white;
@@ -79,6 +81,7 @@ class CallMe extends Component {
             border-left-width: 1px;
           }
           .unical_footer_class.wrap {
+            z-index: 99999;
             position: fixed;
             right: 60px;
             bottom: 40px;
