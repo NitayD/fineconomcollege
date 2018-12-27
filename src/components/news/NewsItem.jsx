@@ -5,15 +5,17 @@ import BackBtn                  from 'components/Universal/BackBtn'
 import Btn                      from 'components/Universal/Btn'
 import CategoryBtn              from 'components/news/CategoryBtn'
 import { connect }              from 'react-redux'
+import SEO                      from 'components/Universal/SEO'
 
 import styles                   from 'styles/news/NewsItem.scss'
 
 class NewsItem extends PureComponent {
   render () {
     const { Дата_публикации, Заголовок, Изображение, Категории, Содержимое } = this.props.data.find( el => el.slug === this.props.slug ? true : false )
-    const { Полное } = Содержимое
+    const { Полное, Короткое } = Содержимое
     return (
         <section>
+            <SEO title={Заголовок} description={Короткое} image={Изображение.secure_url}/>
             <div className="container">
                 <div className="row ">
                     <div className="col d-flex justify-content-between align-items-start">

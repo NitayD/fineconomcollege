@@ -4,7 +4,6 @@ import styles               from 'styles/Logo.scss'
 import Footer               from 'components/layout/Footer'
 import NewsItem             from 'components/news/NewsItem'
 import axios                from 'axios'
-
 import { initItemPageData } from 'actions/news_page'
 
 class NewsMainContainer extends Component {

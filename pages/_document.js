@@ -30,35 +30,23 @@ export default class extends Document {
       .map(el => this.props.helmet[el].toComponent())
   }
 
-  get helmetJsx () {
-    const { title, desc, img } = baseSeo
-    return (
-      <Helmet>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-
-        <title>{title}</title>
-        <meta property="title" content={title}/>
-        <meta property="og:title" content={title}/>
-
-        <meta property="og:type" content="website"/>
-        <meta property="type" content="website"/>
-
-        <meta property="description" content={desc}/>
-        <meta name="description" content={desc}/>
-        <meta property="og:description" content={desc}/>
-        
-        <meta property="og:image" content={img}/>
-        <meta property="image" content={img}/>
-      </Helmet>
-    )
-  }
-
   render () {
+    const { title, desc, img } = baseSeo
     return (
       <html {...this.helmetHtmlAttrComponents}>
         <Head>
-          { this.helmetJsx }
           { this.helmetHeadComponents }
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <title>{title}</title>
+          <meta property="title" content={title}/>
+          <meta property="og:title" content={title}/>
+          <meta property="og:type" content="website"/>
+          <meta property="type" content="website"/>
+          <meta property="description" content={desc}/>
+          <meta name="description" content={desc}/>
+          <meta property="og:description" content={desc}/>
+          <meta property="og:image" content={img}/>
+          <meta property="image" content={img}/>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-touch-icon.png?v1=7koRgvAMbN"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png?v1=7koRgvAMbN"/>
           <link rel="icon" type="image/png" sizes="192x192" href="/static/img/favicons/android-chrome-192x192.png?v1=7koRgvAMbN"/>

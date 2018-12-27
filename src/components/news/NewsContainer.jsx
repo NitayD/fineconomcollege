@@ -7,6 +7,7 @@ import NewsItemPreview          from './NewsItemPreview'
 import { connect }              from 'react-redux'
 import axios                    from 'axios'
 import styles                   from 'styles/news/NewsItem.scss'
+import SEO                      from 'components/Universal/SEO'
 
 class NewsItem extends PureComponent {
   renderNews(item) {
@@ -20,6 +21,9 @@ class NewsItem extends PureComponent {
     const { data } = this.props
     return (
       <section>
+        <SEO
+            title='Блок Финансово Экономического колледжа'
+            description='Здесь публикуются самые свежие новости из студенческо жизни в колледже'/>
           <div className="container">
             {
               data.length > 0

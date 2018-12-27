@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import axios                from 'axios'
 import Slider               from "react-slick"
-import PopupLink            from 'components/popup/PopupLink'
-import { Link }             from '/../routes'
 import ParsedHTML           from 'components/Universal/ParsedHTML'
-
 import Footer               from 'components/layout/Footer'
-
 import styles               from 'styles/abiturientam/Documenti.scss'
+import SEO                  from 'components/Universal/SEO'
 
 const optVerticalMain = {
   dots: true,
@@ -40,6 +37,8 @@ class StudenLive extends Component {
     const { Изображения, Обложка } = data
     return (
       <main>
+        <SEO title="Список документов, необходимых для поступления"
+          description='Общежитие — место временного проживания для приезжих студентов и учащихся на время учёбы, сезонных рабочих на время работы, службы или ставшее постоянным для работников учреждения. Соответственно, следует различать студенческие и рабочие общежития.'/>
         <section>
           <div className="container">
             <div className="row">

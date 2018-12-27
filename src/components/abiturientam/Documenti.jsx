@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
-import { Parallax } from 'react-parallax'
-
-import PopupLink from 'components/popup/PopupLink'
-
-import Footer from 'components/layout/Footer'
-
-import styles from 'styles/abiturientam/Documenti.scss'
+import { Parallax }         from 'react-parallax'
+import Footer               from 'components/layout/Footer'
+import styles               from 'styles/abiturientam/Documenti.scss'
+import SEO                  from 'components/Universal/SEO'
 
 class Documenti extends Component {
   render () {
     return (
       <div>
+        <SEO title="Список документов, необходимых для поступления"/>
         <Parallax
           bgImage='/static/img/abiturientam/specialnosti.jpg'
           bgImageAlt="Specialnosti Background"
