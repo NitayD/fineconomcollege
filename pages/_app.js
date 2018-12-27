@@ -60,8 +60,7 @@ class MyApp extends App {
             font-weight: normal;
             position: fixed;
             bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: calc(50% - 45px);
             font-size: 60px;
             animation: spin 3s infinite linear;
             z-index: 99999;

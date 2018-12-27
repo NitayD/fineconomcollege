@@ -21,7 +21,7 @@ class Documenti extends Component {
           </div>
         </Parallax>
         <section>
-          <div className="container wrap">
+          <div className="container wrap block">
 
             <div className="row no-gutters justify-content-center">
               <div className="col-12">
@@ -40,9 +40,6 @@ class Documenti extends Component {
                   </li>
                   <li className="list__item">
                     Копия | ИИН одного из родителей
-                  </li>
-                  <li>
-                    <PopupLink popupInner={<span>Жопа</span>}>Привет</PopupLink>
                   </li>
                   <li className="list__item">
                     Оригинал и копия | Удостоверение личности или свидетельство о рождении
@@ -147,6 +144,12 @@ class Documenti extends Component {
           </div>
         </section>
         <Footer/>
+        <style jsx>{`
+          .block {
+            padding-top: 45px;
+            padding-bottom: 45px;
+          }
+        `}</style>
         <style jsx>{styles}</style>
       </div>
     )

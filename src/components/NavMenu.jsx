@@ -6,11 +6,14 @@ import { Media } from 'react-breakpoints'
 import Humburger from './Humburger'
 
 const menu = {
-  toStudents: [{
-    href: '/studentam/raspisanie',
-    text: 'Расписание',
-    type: 'link'
-  }],
+  toStudents: [
+    // TODO: запилить телеграмм бота, а затем этот раздел
+  //   {
+  //   href: '/studentam/raspisanie',
+  //   text: 'Расписание',
+  //   type: 'link'
+  // }
+],
   toAbituriens: [{
       href: '/abiturientam/studencheskaya_zhizn',
       text: 'Студенческая жизнь',
@@ -19,52 +22,63 @@ const menu = {
       href: '/abiturientam/specialnosti',
       text: 'Специальности',
       type: 'link'
-    },{
-      href: '/abiturientam/konkursi',
-      text: 'Конкурсы',
-      type: 'link'
-    },{
+    },
+    // TODO: Допилить этот раздел
+    // {
+    //   href: '/abiturientam/konkursi',
+    //   text: 'Конкурсы',
+    //   type: 'link'
+    // },
+    {
       href: '/abiturientam/dokumenti',
-      text: 'Документы',
+      text: 'Документы и правила',
       type: 'link'
-    },{
-      href: '/abiturientam/pravila',
-      text: 'Правила',
-      type: 'link'
-    },{
-      href: '/abiturientam/dni_otkritih_dverei',
-      text: 'Дни открытых дверей',
-      type: 'link'
-    },{
+    },
+    // TODO: Допилить этот раздел
+    // {
+    //   href: '/abiturientam/dni_otkritih_dverei',
+    //   text: 'Дни открытых дверей',
+    //   type: 'link'
+    // },
+    {
       href: '/abiturientam/obshezhitie',
       text: 'Общежитие',
       type: 'link'
-    },{
-      href: '/abiturientam/vne_urochnaya_deyatelnost',
-      text: 'Внеурочная деятельность',
-      type: 'link'
-    }],
+    },
+    // TODO: Понять, что за раздел
+    // {
+    //   href: '/abiturientam/vne_urochnaya_deyatelnost',
+    //   text: 'Внеурочная деятельность',
+    //   type: 'link'
+    // }
+  ],
   o_nas: [{
       href: '/o_nas/istoriya',
       text: 'История колледжа',
       type: 'link'
-    },{
-      href: '/o_nas/klubi',
-      text: 'Клубы',
-      type: 'link'
-    },{
-      href: '/o_nas/prepodavateli',
-      text: 'Преподаватели',
-      type: 'link'
-    },{
+    },
+    // {
+    //   href: '/o_nas/klubi',
+    //   text: 'Клубы',
+    //   type: 'link'
+    // },
+    {
       href: '/o_nas/administraciya',
       text: 'Администрация',
       type: 'link'
-    },{
-      href: '/o_nas/pomesheniya',
-      text: 'Помещения',
-      type: 'link'
-    }]
+    },
+    // TODO: Настроить в админке
+    // {
+    //   href: '/o_nas/prepodavateli',
+    //   text: 'Преподаватели',
+    //   type: 'link'
+    // },
+    // {
+    //   href: '/o_nas/pomesheniya',
+    //   text: 'Помещения',
+    //   type: 'link'
+    // }
+  ]
 };
 
 export default class NavMenu extends PureComponent {
@@ -82,20 +96,20 @@ export default class NavMenu extends PureComponent {
                     <a>Главная</a>
                   </Link>
                 </li>
-                <li className="navmenu__item">
+                {/* <li className="navmenu__item">
                   <Dropdown items={menu.toStudents} defaultText="Обучение"/>
-                </li>
+                </li> */}
                 <li className="navmenu__item">
                   <Dropdown items={menu.toAbituriens} defaultText="Поступление"/>
                 </li>
                 <li className="navmenu__item">
                   <Dropdown items={menu.o_nas} defaultText="О колледже"/>
                 </li>
-                <li className="navmenu__item">
+                {/* <li className="navmenu__item">
                   <Link href="/auth/">
                     <a>Войти/Зарегистрироваться</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <style jsx>{styles}</style>
             </nav>

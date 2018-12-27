@@ -1,12 +1,14 @@
-import React, { PureComponent } from 'react'
-import { Link } from '/../routes'
-import PopupLink from 'components/popup/PopupLink'
-import styles from 'styles/layout/footer.scss'
-import Popup from 'components/popup/Popup'
+import React, { PureComponent, Fragment } from 'react'
+import { Link }                           from '/../routes'
+import PopupLink                          from 'components/popup/PopupLink'
+import styles                             from 'styles/layout/footer.scss'
+import Popup                              from 'components/popup/Popup'
+import CallMe                             from './CallMe'
 
 export default class Footer extends PureComponent {
   render () {
     return (
+      <Fragment>
       <footer className="footer">
         <div className="container">
           <div className="row align-items-center">
@@ -119,6 +121,8 @@ export default class Footer extends PureComponent {
         <Popup/>
         <style jsx>{styles}</style>
       </footer>
+      <CallMe />
+      </Fragment>
     )
   }
 }
