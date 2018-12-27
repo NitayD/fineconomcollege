@@ -53,7 +53,7 @@ class Layout extends Component {
         >
           <div className="container first">
             <h1 className="logo__name">
-              Финансово&#8209;Экономический Колледж
+              Финансово Экономический Колледж
             </h1>
             <figure className="down">
               <button className="link" onClick={()=>scrollById('section-2')}>
