@@ -59,6 +59,17 @@ export default class extends Document {
         <Head>
           { this.helmetJsx }
           { this.helmetHeadComponents }
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-touch-icon.png?v1=7koRgvAMbN">
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png?v1=7koRgvAMbN">
+          <link rel="icon" type="image/png" sizes="192x192" href="/static/img/favicons/android-chrome-192x192.png?v1=7koRgvAMbN">
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicons/favicon-16x16.png?v1=7koRgvAMbN">
+          <link rel="manifest" href="/static/img/favicons/site.webmanifest?v1=7koRgvAMbN">
+          <link rel="mask-icon" href="/static/img/favicons/safari-pinned-tab.svg?v1=7koRgvAMbN" color="#5bbad5">
+          <link rel="shortcut icon" href="/static/img/favicons/favicon.ico?v1=7koRgvAMbN">
+          <meta name="msapplication-TileColor" content="#7c4dff">
+          <meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png?v1=7koRgvAMbN">
+          <meta name="msapplication-config" content="/static/img/favicons/browserconfig.xml?v1=7koRgvAMbN">
+          <meta name="theme-color" content="#ffffff"></meta>
           <link rel="stylesheet" href="/static/css/normalize.css"/>
           <link rel="stylesheet" href="/static/libs/bootstrap/bootstrap-grid.min.css"/>
           <link rel="stylesheet" href="/static/css/global.css"/>
