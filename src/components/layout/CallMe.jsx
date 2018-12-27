@@ -42,7 +42,7 @@ class CallMe extends Component {
           <PopupLink popupInner={
             <div className="form form__unical01 d-flex flex-column align-items-center">
               <h5>Оставьте ваш номер телефона, и мы вам перезвоним</h5>
-              <div className="d-flex align-items-center" style={{ margin: '15px 0 0' }}>
+              <div className="d-flex flex-column flex-sm-row align-items-center" style={{ margin: '15px 0 0' }}>
                 <InputMask mask="+7 (999) 999-99-99" maskChar={null} onChange={this.onChange.bind(this)} autoFocus/>
                 <button className={`${this.state.value.length === 18 ? 'current' : ''}`} onClick={this.sendOrder.bind(this)}>
                   Перезвонить
@@ -66,6 +66,11 @@ class CallMe extends Component {
             background-color: #7C4DFF;
             white-space: nowrap;
             border: none;
+          }
+          @media screen and (max-width: 575px) {
+            .form__unical01 button {
+              margin-top: 15px;
+            }
           }
           .form__unical01 input {
             display: inline-block;
