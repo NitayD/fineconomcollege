@@ -1,0 +1,8 @@
+@import '../vars';
+
+.title {
+  margin-top: 60px;
+  @extend %title;
+  color: $color_main;
+  text-align: left;
+}

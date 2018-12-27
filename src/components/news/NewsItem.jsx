@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import ParsedDate               from 'components/Universal/ParsedDate'
 import ParsedHTML               from 'components/Universal/ParsedHTML'
 import BackBtn                  from 'components/Universal/BackBtn'
+import Btn                      from 'components/Universal/Btn'
 import CategoryBtn              from 'components/news/CategoryBtn'
 import { connect }              from 'react-redux'
 
@@ -14,9 +15,9 @@ class NewsItem extends PureComponent {
     return (
         <section>
             <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <BackBtn withIcon={true}/>
+                <div className="row ">
+                    <div className="col d-flex justify-content-between align-items-start">
+                        <BackBtn withIcon={true}/><Btn text="К другим новостям<i class='icon-right-thin d-none d-sm-inline-block'></i>" route="news" margin="0 0 0 10px" right={true}/>
                     </div>
                 </div>
                 <div className="row">
@@ -38,6 +39,10 @@ class NewsItem extends PureComponent {
             <style jsx>{`
                 img {
                     max-width: 100%;
+                    width: 100%;
+                }
+                .container > .row {
+                    margin-top: 15px;
                 }
             `}</style>
             <style jsx>{ styles }</style>

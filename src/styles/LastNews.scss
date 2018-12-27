@@ -8,6 +8,7 @@
     margin-top: $h_def * 2;
     @extend %title;
     color: $color_text;
+    margin-bottom: $h_def * 2;
   }
   &__news {
     position: relative;

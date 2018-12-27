@@ -3,10 +3,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: calc(126px + #{$h_def * 2});
-  transition: padding-top 0.5s ease-out;
+  padding-top: calc(100px + #{$h_def * 2});
+  transition: padding-top 0.3s ease-out;
   &.mini {
-    padding-top: calc(126px + #{$h_def / 3 * 2});
+    padding-top: calc(100px + #{$h_def / 3 * 2});
+  }
+  @media screen and (max-width: 991px) {
+    padding-top: calc(80px + #{$h_def * 2});
+    transition: padding-top 0.3s ease-out;
+    &.mini {
+      padding-top: calc(80px + #{$h_def / 3 * 2});
+    }
   }
 }
 .header {

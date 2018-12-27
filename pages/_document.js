@@ -62,6 +62,8 @@ export default class extends Document {
           <link rel="stylesheet" href="/static/css/normalize.css"/>
           <link rel="stylesheet" href="/static/libs/bootstrap/bootstrap-grid.min.css"/>
           <link rel="stylesheet" href="/static/css/global.css"/>
+          <link rel="stylesheet" href="/static/img/icons/fontello/css/fontello.css"/>
+          <link rel="stylesheet" href="/static/img/icons/fontello/css/animation.css"/>
         </Head>
         <body {...this.helmetBodyAttrComponents}>
           

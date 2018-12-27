@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
-function backToLastWindow() {
-  return window ? window.history.back() : false
-}
-const BackBtn = ({ text }) => {
+import { Link } from '/../routes'
+
+const Btn = ({ text, route, params, margin, right }) => {
   return (
     <Fragment>
-      <a onClick={backToLastWindow} className="parsedHTML" dangerouslySetInnerHTML={{__html: text ? text : 'Назад<i class="icon-back d-none d-sm-inline-block"></i>'}}/>
+      <Link route={route ? route : '/'} params={ params ? params : {} }> 
+        <a className="parsedHTML" dangerouslySetInnerHTML={{__html: text ? text : ''}}/>
+      </Link>
       <style jsx>{`
         a {
           display: inline-block;
@@ -16,9 +17,11 @@ const BackBtn = ({ text }) => {
           color: white;
           background-color: #7C4DFF;
           white-space: nowrap;
+          margin: ${margin ? margin : '0'};
+          text-align: ${right ? 'right' : 'left'};
         }
       `}</style>
     </Fragment>
   )
 }
-export default BackBtn
+export default Btn

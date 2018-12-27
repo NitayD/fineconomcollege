@@ -12,13 +12,13 @@ class NewsMainContainer extends Component {
     if ( !query.slug ) { return }
     let res = { slug: query.slug }
     await axios.get(`${process.env.API_ADDRESS}/blog/${query.slug}`)
-        .then(({ data }) => {
-            store.dispatch(initItemPageData(data))
-        })
-        .catch((err) => {
-          console.dir(err);
-          res.errorCode = err.response ? response.status : 500
-        })
+      .then(({ data }) => {
+        store.dispatch(initItemPageData(data))
+      })
+      .catch((err) => {
+        console.dir(err);
+        res.errorCode = err.response ? response.status : 500
+      })
     return res
   }
 

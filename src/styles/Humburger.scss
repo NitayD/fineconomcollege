@@ -3,6 +3,9 @@
   &.open {
     .content {
       left: 0;
+      &__overlay {
+        left: 100%;
+      }
     }
     .humburger {
       &__line {
@@ -35,7 +38,6 @@
   position: fixed;
   width: 80vw;
   max-width: 80vw;
-  min-width: 320px;
   left: -100%;
   top: 0;
   bottom: 0;
@@ -52,7 +54,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 100%;
+    left: 0;
     width: 20vw;
   }
 }

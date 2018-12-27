@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Parallax } from 'react-parallax'
 import Footer from 'components/layout/Footer'
-import Link from 'next/link'
+import { Link } from '/../routes'
 import stylesPage from 'styles/abiturientam/Specialnosti.scss'
 import { loadSpecialtyData } from 'actions/specialty'
-import TermsAndPaymentTable from './TermsAndPaymentTable.js'
+import TermsAndPaymentTable from './TermsAndPaymentTable'
 import Helmet from 'react-helmet'
 
 import Specialnost from './Specialnost'

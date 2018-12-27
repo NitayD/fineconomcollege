@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
+import { Link } from '/../routes'
 import styles from 'styles/NavMenu.scss'
 import Dropdown from './Dropdown'
 import { Media } from 'react-breakpoints'
@@ -105,7 +105,7 @@ export default class NavMenu extends PureComponent {
             <Humburger>
               <ul className="navmenu__list">
                 <li className="navmenu__item">
-                  <Link href="">
+                  <Link route="/">
                     <a>Главная</a>
                   </Link>
                 </li>
@@ -118,11 +118,11 @@ export default class NavMenu extends PureComponent {
                 <li className="navmenu__item">
                   <Dropdown items={menu.o_nas} defaultText="О колледже"/>
                 </li>
-                <li className="navmenu__item">
-                  <Link href="/auth/">
+                {/* <li className="navmenu__item">
+                  <Link route="/auth/">
                     <a>Войти/Зарегистрироваться</a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </Humburger>
               <style jsx>{styles}</style>

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
+import { Link } from '/../routes'
 import PopupLink from 'components/popup/PopupLink'
 import styles from 'styles/layout/footer.scss'
 import Popup from 'components/popup/Popup'
@@ -13,42 +13,42 @@ export default class Footer extends PureComponent {
             <div className="col-md-4">
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link href="/abiturientam/studencheskaya_zhizn">
+                  <Link route="/abiturientam/studencheskaya_zhizn">
                     <a className="link link--big">Студенческая жизнь</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/specialnosti">
+                  <Link route="/abiturientam/specialnosti">
                     <a className="link link--big">Специальности</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/konkursi">
+                  <Link route="/abiturientam/konkursi">
                     <a className="link link--big">Конкурсы</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/dokumenti">
+                  <Link route="/abiturientam/dokumenti">
                     <a className="link link--big">Документы</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/pravila">
+                  <Link route="/abiturientam/pravila">
                     <a className="link link--big">Правила</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/dni_otkritih_dverei">
+                  <Link route="/abiturientam/dni_otkritih_dverei">
                     <a className="link link--big">Дни открытых дверей</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/obshezhitie">
+                  <Link route="/abiturientam/obshezhitie">
                     <a className="link link--big">Общежитие</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/vne_urochnaya_deyatelnost">
+                  <Link route="/abiturientam/vne_urochnaya_deyatelnost">
                     <a className="link link--big">Внеурочная деятельность</a>
                   </Link>
                 </li>
@@ -88,27 +88,27 @@ export default class Footer extends PureComponent {
             <div className="col-md-4">
               <ul className="footer__list footer__list--right">
                 <li className="footer__item">
-                  <Link href="/abiturientam/istoriya">
+                  <Link route="/abiturientam/istoriya">
                     <a className="link link--big">История колледжа</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/klubi">
+                  <Link route="/abiturientam/klubi">
                     <a className="link link--big">Клубы</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/prepodavateli">
+                  <Link route="/abiturientam/prepodavateli">
                     <a className="link link--big">Преподаватели</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/administraciya">
+                  <Link route="/abiturientam/administraciya">
                     <a className="link link--big">Администрация</a>
                   </Link>
                 </li>
                 <li className="footer__item">
-                  <Link href="/abiturientam/pomesheniya">
+                  <Link route="/abiturientam/pomesheniya">
                     <a className="link link--big">Помещения</a>
                   </Link>
                 </li>

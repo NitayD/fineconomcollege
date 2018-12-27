@@ -22,7 +22,7 @@ class LastNews extends PureComponent {
           </div>
           <div className="row justify-content-end">
             <div className="col-auto lastnews__more">
-              <Link href="/novosti">
+              <Link route="/blog">
                 <a className="btn">
                   Больше новостей
                 </a>

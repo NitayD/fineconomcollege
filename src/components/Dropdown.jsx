@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Link from 'next/link'
+import { Link } from '/../routes'
 import styles from 'styles/Dropdown.scss'
 
 let linksCounter = 0
@@ -38,7 +38,7 @@ const DropdownLinkItem = function(props) {
   const { text, href } = props;
   return (
     <li className="dropdown__item">
-      <Link href={ href }>
+      <Link route={ href }>
         <a>{ text }</a>
       </Link>
       <style jsx>{styles}</style>

@@ -19,13 +19,26 @@ class CategoryBtn extends Component {
         console.dir(err);
       })
   }
+  getDataByKey(key) {
+    const result = this.props.data.find(el => el.key === key ? true : false)
+    if (result)
+      return result
+    else
+      axios.get(`${process.env.API_ADDRESS}/blog_category_key/${key}`)
+      .then((ress) => {
+        console.log(ress)
+        this.props.initCategory(ress.data)
+      })
+      .catch((err) => {
+        console.log(err);
+        console.dir(err);
+      })
+  }
   render () {
-    const { id, className } = this.props
-    if (id) {
-      const data = this.getDataById(id)
-      if (!data) return <button onClick={() => this.getDataById(id)}>
-        Retry
-      </button>
+    const { id, keyId, className } = this.props
+    if (id || keyId) {
+      const data = id ? this.getDataById(id) : this.getDataByKey(keyId)
+      if (!data) return <span>Error</span>
       const { Название, key } = data
       return (
         <Link route='news_with_filter' params={{category: key}}>

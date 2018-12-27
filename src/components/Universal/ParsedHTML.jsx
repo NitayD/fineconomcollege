@@ -23,6 +23,9 @@ const ParsedText = ({text, className}) => {
                 }
                 .parsedHTML li {
                     display: list-item;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
+                    font-size: 17px;
                 }
                 .parsedHTML ol {
                     display: block;
