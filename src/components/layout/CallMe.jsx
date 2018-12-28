@@ -44,7 +44,7 @@ class CallMe extends Component {
               <h5>Оставьте ваш номер телефона, и мы вам перезвоним</h5>
               <div className="d-flex flex-column flex-sm-row align-items-center" style={{ margin: '15px 0 0' }}>
                 <InputMask mask="+7 (999) 999-99-99" maskChar={null} onChange={this.onChange.bind(this)} autoFocus/>
-                <button className={`${this.state.value.length === 18 ? 'current' : ''}`} onClick={this.sendOrder.bind(this)}>
+                <button className={`${this.state.value.length === 18 ? 'correct' : ''}`} onClick={this.sendOrder.bind(this)}>
                   Перезвонить
                 </button>
               </div>
@@ -62,10 +62,14 @@ class CallMe extends Component {
             line-height: 24px;
             padding: 7.5px 12.5px;
             position: relative;
-            color: white;
-            background-color: #7C4DFF;
+            color: #212121;
+            background-color: #D1C4E9;
             white-space: nowrap;
             border: none;
+          }
+          .form__unical01 button.correct {
+            color: white;
+            background-color: #7C4DFF;
           }
           @media screen and (max-width: 575px) {
             .form__unical01 button {
